@@ -1,0 +1,30 @@
+
+.Footer{
+    background: linear-gradient(60deg, black, pink);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer ul{
+    list-style:none;
+    text-decoration: none;
+    
+}
+.Footer a{
+    list-style:none;
+    text-decoration: none;
+}
+
+.Navigation {
+    text-align: center;
+}
+
+.Navigation li{
+    display: inline-block;
+    padding: 0 30px;
+}
+
+ul :hover{
+    color: lightpink;
+}

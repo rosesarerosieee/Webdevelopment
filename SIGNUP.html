@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+    <html>
+<style>
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(60deg, yellow, red);
+}
+* {box-sizing: border-box}
+
+input[type=text], input[type=password] {
+  width: 40%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ffffff;
+}
+
+hr {
+  border: 1px solid #020202;
+  margin-bottom: 25px;
+  width: 40%;
+}
+
+
+button {
+  background-color: #020303;
+  color: rgb(255, 178, 78);
+  padding: 20px 15px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 15px;
+}
+
+
+button:hover {
+  opacity:1;
+  color: red;
+}
+
+
+ .regbtn {
+  float: center;
+  width: 20%;
+}
+
+.container {
+  padding: 100px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 50px) {
+   .signupbtn {
+     width: 30%;
+  }
+}
+</style>
+
+    <form action="Regsumm.php" method="get">
+
+        <Title>Registration Page</Title>
+
+        <body>
+            <div class="container">
+                <h1 align="center">Sign Up</h1>
+                <p align="center">Please fill in this form to register your account.</p>
+                <hr>
+                
+                <p align="center"><label for="firstname"><b>First Name</b></label><br></p>
+                <p align="center"><input type="text" placeholder="Enter First name" name="firstname" required><br></p>
+                
+                <p align="center"><label for="lastname"><b>Last Name</b></label><br></p>
+                <p align="center"><input type="text" placeholder="Enter Last name" name="lastname" required><br></p>
+
+                <p align="center"><label for="contact"><b>Contact Number</b></label><br></p>
+                <p align="center"><input type="text" placeholder="Enter Contact Number" name="contact" required><br></p>
+
+                <p align="center"><label for="address"><b>Address</b></label><br></p>
+                <p align="center"><input type="text" placeholder="Enter Address" name="address" required></td><br></p>
+
+                <p align="center"><label for="email"><b>Email</b></label><br></p>
+                <p align="center"><input type="text" placeholder="Enter Email" name="email" required><br></p>
+            
+                <p align="center"><label for="psw"><b>Password</b></label><br></p>
+                <p align="center"><input type="password" placeholder="Enter Password" name="psw" required><br></p>
+            
+                <p align="center"><label for="pswrepeat"><b>Repeat Password</b></label><br></p>
+                <p align="center"><input type="password" placeholder="Repeat Password" name="pswrepeat" required><br></p>
+                
+                <p align="center"><label>
+                    <input type="checkbox" check="check" name="remember" style="margin-bottom:15px"> Please email me special offers and other promo info
+                </label></p>
+                
+                <p align="center">By registering, you agree to Jabilee <a href="blankopa" style="color:dodgerblue"> Privacy Policy</a> and <a href="blankopa" style="color:dodgerblue">Terms and Conditions.</a></p>
+            
+                <br>
+                <div class="clearfix" align="center">
+                  <button type="submit" class="regbtn">Sign Up</button>
+                </div>
+              </div>
+            
+        </body>
+      </form>
+    
+</html>
